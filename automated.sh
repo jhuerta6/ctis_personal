@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#README: Replace <> by the adecuate values.
 #This script will automate the process of uploading from a zipped file to our database. It will join and implement the three different scripts used for this.
 
 for z in *.zip; 
@@ -89,7 +90,7 @@ for z in *.zip;
  cd tabular
  for f in *.csv;
   do
-  mysqlimport --host=irpsrvgis35.utep.edu --port=3306 --user=ctis --password=19691963 --local --fields-terminated-by='|' -v -u ctis --password=19691963 imsc $f;
+  mysqlimport --host=<host> --port=3306 --user=<user> --password=<pass> --local --fields-terminated-by='|' -v -u <user> --password=<pass> <table name> $f;
  done
  cd ../../..;
 done

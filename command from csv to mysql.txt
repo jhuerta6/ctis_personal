@@ -1,8 +1,10 @@
-PS C:\Program Files\MySQL\MySQL Server 5.7\bin> .\mysqlimport.exe --local --fields-terminated-by='|' -v -u root -p testing 'C:\Users\Jorge\Desktop\ctis\downloads\wss_SSA_TX624_soildb_US_2003_[
+README: Replace <> tags with the correct value.
+
+PS C:\Program Files\MySQL\MySQL Server 5.7\bin> .\mysqlimport.exe --local --fields-terminated-by='|' -v -u <user> -p testing 'C:\Users\Jorge\Desktop\ctis\downloads\wss_SSA_TX624_soildb_US_2003_[
 2016-09-20]\TX624\tabular\chfrags.csv'
 
 sed -i 's/"//g' <filename>
 
-on bash: $ mysqlimport --host=127.0.0.1 --port=3306 --user=root --password=root --local --fields-terminated-by='|' -v -u root --password=root testing /mnt/c/Users/Jorge/Desktop/ctis/downloads/wss_SSA_TX624_soildb_US_2003_\[2016-09-20\]/TX624/tabular/chfrags.csv
+on bash: $ mysqlimport --host=127.0.0.1 --port=3306 --user=<user> --password=<pass> --local --fields-terminated-by='|' -v -u root --password=<pass> testing /mnt/c/Users/Jorge/Desktop/ctis/downloads/wss_SSA_TX624_soildb_US_2003_\[2016-09-20\]/TX624/tabular/chfrags.csv
 
 

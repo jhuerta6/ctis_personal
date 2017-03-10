@@ -7,4 +7,4 @@ sed -i 's/"//g' <filename>
 
 on bash: $ mysqlimport --host=127.0.0.1 --port=3306 --user=<user> --password=<pass> --local --fields-terminated-by='|' -v -u root --password=<pass> testing /mnt/c/Users/Jorge/Desktop/ctis/downloads/wss_SSA_TX624_soildb_US_2003_\[2016-09-20\]/TX624/tabular/chfrags.csv
 
-testing
+testing 2
